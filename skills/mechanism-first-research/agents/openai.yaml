@@ -1,0 +1,5 @@
+interface:
+  display_name: "Mechanism-first research"
+  short_description: "Investigate mechanisms and evidence behind technical claims"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,30 @@
+name: Validate skills
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    # Ubuntu 22.04 supports the downloaded Chromium sandbox without
+    # disabling it (24.04 adds restrictive AppArmor user-namespace rules).
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: skills/technical-learning-profile/package-lock.json
+      - name: Install renderer
+        run: npm ci --prefix skills/technical-learning-profile
+      - name: Validate skills and notebook
+        run: |
+          python3 scripts/validate-skills.py
+          python3 -m unittest discover -s tests -v
+      - name: Test real diagram rendering
+        run: node --test tests/render-diagram.test.mjs
