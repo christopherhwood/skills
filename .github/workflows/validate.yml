@@ -7,7 +7,9 @@ permissions:
   contents: read
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    # Ubuntu 22.04 supports the downloaded Chromium sandbox without
+    # disabling it (24.04 adds restrictive AppArmor user-namespace rules).
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
