@@ -14,7 +14,9 @@ class InstallTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / 'skills'
             links = linker.install(ROOT, target)
-            self.assertEqual(len(links), 2)
+            expected = {path.parent.resolve() for path in (ROOT / 'skills').glob('*/SKILL.md')}
+            self.assertTrue(expected)
+            self.assertEqual({link.resolve() for link in links}, expected)
             self.assertEqual(linker.install(ROOT, target), links)
             for link in links:
                 self.assertTrue(link.is_symlink())
