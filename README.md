@@ -7,6 +7,7 @@ Personal skills for technical research, learning, and improving skills from past
 | [mechanism-first-research](skills/mechanism-first-research/SKILL.md) | Investigate mechanisms, check claims, and explain practical differences | Python evidence notebook |
 | [technical-learning-profile](skills/technical-learning-profile/SKILL.md) | Explain progressively, refine mental models, and make mechanisms concrete | Pinned Mermaid diagram renderer |
 | [skills-from-chats](skills/skills-from-chats/SKILL.md) | Extract lessons from past chats, update existing skills first, and evaluate changes | Instructions only |
+| [skill-bakeoff](skills/skill-bakeoff/SKILL.md) | Compare skill and creator variants with matched trials and blind review | Instructions only |
 
 Each skill works independently and allows automatic selection. The research and learning skills do not force tool use for simple questions. Evidence checks establish traceability, not truth. Rendered diagrams still need visual and conceptual inspection.
 

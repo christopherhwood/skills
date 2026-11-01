@@ -27,6 +27,8 @@ Prefer reuse, extension, or a thin wrapper before new tooling. For worthwhile ne
 
 ## Test and improve
 
+For matched comparisons of skill versions, creator variants, or optional helpers, use [skill-bakeoff](../skill-bakeoff/SKILL.md) alongside skill-creator. Define the selection decision before choosing trial arms.
+
 Preserve the previous version and validate the files. After creation or substantial updates:
 
 - Define success from the original goal and corrections, not conformity to the skill's wording.
