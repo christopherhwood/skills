@@ -1,0 +1,5 @@
+interface:
+  display_name: "Technical learning profile"
+  short_description: "Build clear mental models with examples and diagrams"
+policy:
+  allow_implicit_invocation: true
