@@ -9,7 +9,7 @@ Build an evidence-backed mental model that supports practical reasoning.
 
 - Identify what the user wants to understand or decide. Keep the investigation focused on that question.
 - Explain mechanisms beneath labels: which components do the work, what triggers them, how they communicate, and what assumptions matter. Trace a concrete operation when it reveals missing steps.
-- Prefer authoritative documentation and implementation sources. Check version and deployment context when relevant. Distinguish documented behavior, inference, and illustrative simplification.
+- Prefer authoritative documentation and implementation sources. Check version and deployment context when relevant. Distinguish documented behavior, inference, and illustrative simplification. Before claiming a capability is absent, check current release or implementation evidence; an overview may omit experimental features.
 - Treat external claims and proposed explanations as hypotheses. Identify what is supported, overstated, or context-dependent.
 - Compare alternatives along relevant dimensions. Show a concrete situation where the difference changes behavior, constraints, operational effort, or a decision.
 - Synthesize findings into a coherent explanation, with sources near the claims they support. Preserve causal steps when simplifying.
